@@ -1,0 +1,267 @@
+/*
+*	Reglas CSS
+*	
+*	- Reducir al MINIMO el uso de !important
+*	- Usar SIEMPRE metodologia BEM: PrefijoSegunProyecto-Bloque__Elemento --modificador
+*	- Ordenar el archivo segun posicion de la seccion en la página
+*	- Correcto uso de los espacios (Consultar)
+*	- Solo agregar clase a los elementos cuando sea necesario. Por ejemplo, si
+*	  lo unico que hay que hacer en un elemento es centrar a los hijos se puede hacer con 
+*	  Bootstrap: 
+*		class="d-flex align-items-center justify-content-center". 
+*	  O si sabemos que  es un elemento UNICO en esa seccion como un titulo podemos usar
+*	  la clase padre:
+*		.padre h2 {...}
+*	-
+*
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&display=swap');
+
+/* General */
+:root {
+	--primary: #9429ff;
+	--secondary: ;
+	--text: #6D6E70;
+}
+* {
+	font-family: 'Poppins', sans-serif;
+}
+body {
+	background: #FFF !important;
+}
+ul {
+	margin-bottom: 0;
+	padding-left: 0;
+}
+a {
+	text-decoration: none;
+}
+p {
+	margin-bottom: 0;
+}
+.woocommerce {
+	max-width: unset !important;
+}
+
+/* 
+*	Header 
+*/
+.tcp-header {
+	background-color: #FFF;
+	box-shadow: 0px 4px 7px 0px rgba(173, 170, 169, 0.60);
+	position: sticky;
+	z-index: 999;
+	top: 0;
+}
+.tcp-header__inner {
+	display: flex;
+	align-items: center;
+	height: 73px;
+	gap: 70px;
+}
+.tcp-header__nav {
+	display: flex;
+	justify-content: space-between;
+	width: 100%;
+}
+.tcp-header__logo img {
+	height: 32px;
+	width: auto;
+}
+.tcp-header__toggle {
+	display: none;
+}
+.tcp-header__primarynav,
+.tcp-header__secondarynav {
+	height: 100%;
+	display: flex;
+	align-items: center;
+	list-style: none;
+	gap: 20px;
+}
+.tcp-header__primarynav a {
+	font-size: 16px;
+	color: #000;
+}
+.tcp-header__secondarynav a {
+	display: flex;
+	align-items: center;
+	gap: 11px;
+	font-size: 14px;
+	color: var(--text) !important;
+}
+.tcp-header__cartcount {
+	display: flex;
+	width: 37px;
+	height: 37px;
+	align-items: center;
+	justify-content: center;
+	background-color: var(--primary);
+	border-radius: 100px;
+	color: #FFF;
+}
+
+/* 
+*	Footer 
+*/
+.tcp-footer {
+	background-color: #6D6E70;
+	padding: 60px 0;
+}
+.tcp-footer__grid {
+	display: grid;
+	grid-template-columns: .5fr 1fr 1fr 1fr;
+}
+.tcp-footer__grid section {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.tcp-footer__grid section:first-child {
+	justify-content: start;
+}
+
+.tcp-rightsfooter {
+	background-color: #222;
+	padding: 5px 0;
+}
+.tcp-rightsfooter p {
+	color: #FFF;
+	font-size: 14px;
+}
+
+/*
+*	Product Miniature
+*/
+.tcp-productmin {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+/*
+*	Related Products
+*/
+.tcp-relatedproducts ul::after,
+.tcp-relatedproducts ul::before {
+	content: none !important;
+}
+.tcp-relatedproducts ul {
+	display: grid;
+	gap: 10px;
+	grid-template-columns: repeat(4, 1fr);
+}
+
+/*
+*	Shop
+*/
+.tcp-productsgrid {
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	gap: 20px;
+}
+
+/*
+*	Cart
+*/
+.woocommerce .cart-collaterals .cart_totals, 
+.woocommerce-page .cart-collaterals .cart_totals {
+	width: 100%;
+}
+
+/*
+*	Checkout
+*/
+.tcp-checkout {
+	
+}
+
+/* 
+* Responsive 
+*/
+@media (max-width: 1200px) {
+	/* Header mobile */
+	.tcp-header__inner {
+		gap: 40px;
+	}
+	.tcp-header__primarynav a {
+		font-size: 14px;
+	}
+}
+
+@media (max-width: 992px) {
+	/* Header mobile */
+	.tcp-header__inner {
+		justify-content: space-between;
+	}
+	.tcp-header__nav {
+		width: fit-content;
+	}
+	.tcp-header__primarynav {
+		display: none;
+	}
+	.tcp-header__toggle {
+		width: 20px;
+		height: auto;
+		display: block;
+		order: -1;
+		cursor: pointer;
+	}
+	.tcp-header__primarynav.--active {
+		width: 100%;
+		height: fit-content;
+		padding: 40px 10px;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		gap: 0;
+		position: fixed;
+		top: 74px;
+		left: 0;
+		background-color: #FFF;
+		box-shadow: 0px 4px 7px 0px rgba(173, 170, 169, 0.60);
+	}
+	.tcp-header__primarynav.--active li {
+		border-bottom: 1px solid #DDD;
+		width: 100%;
+	}
+	.tcp-header__primarynav.--active li:last-child {
+		border: none;
+	}
+	.tcp-header__primarynav.--active a {
+		padding: 10px;
+		display: block;
+	}
+
+	/* Products Page Mobile */
+	.tcp-productsgrid {
+		grid-template-columns: 1fr
+	}
+	
+	/* Footer Mobile */
+	.tcp-footer__grid {
+		grid-template-columns: 1fr;
+		gap: 40px;
+	}
+	.tcp-footer__grid section:first-child {
+		justify-content: center;
+	}
+}
+
+@media (max-width: 768px) {
+	/* Header mobile */
+	.tcp-header__cartcount {
+		width: 30px;
+		height: 30px;
+		font-size: 12px;
+	}
+	.tcp-header__logo img {
+		height: 40px;
+	}
+	.tcp-header__inner {
+		gap: unset;
+	}
+}

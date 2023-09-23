@@ -1,0 +1,21 @@
+name: colchoneriavip
+recipe: wordpress
+proxy:
+  appserver:
+    - customecom.local
+config:
+  php: '7.4'
+  via: apache
+  webroot: .
+  xdebug: true
+services:
+  database:
+    portforward: true
+    type: mysql
+    creds:
+      user: colchoneriavipdb
+      password: colchoneriavipdb
+      database: colchoneriavipdb
+  pma:
+    type: phpmyadmin
+    hosts: database

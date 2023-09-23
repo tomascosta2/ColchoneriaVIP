@@ -1,0 +1,45 @@
+2023-09-22T03:55:02+00:00 CRITICAL Uncaught Error: Call to a member function get_regular_price() on string in /app/wp-content/themes/customecommerce/single-product.php:3
+Stack trace:
+#0 /app/wp-includes/template-loader.php(106): include()
+#1 /app/wp-blog-header.php(19): require_once('/app/wp-include...')
+#2 /app/index.php(17): require('/app/wp-blog-he...')
+#3 {main}
+  thrown en /app/wp-content/themes/customecommerce/single-product.php en la línea 3
+
+2023-09-22T03:55:32+00:00 CRITICAL Uncaught Error: Call to a member function get_regular_price() on string in /app/wp-content/themes/customecommerce/single-product.php:3
+Stack trace:
+#0 /app/wp-includes/template-loader.php(106): include()
+#1 /app/wp-blog-header.php(19): require_once('/app/wp-include...')
+#2 /app/index.php(17): require('/app/wp-blog-he...')
+#3 {main}
+  thrown en /app/wp-content/themes/customecommerce/single-product.php en la línea 3
+
+2023-09-22T03:55:43+00:00 CRITICAL Uncaught Error: Call to a member function get_price() on string in /app/wp-content/plugins/woocommerce/includes/wc-product-functions.php:1126
+Stack trace:
+#0 /app/wp-content/themes/customecommerce/single-product.php(4): wc_get_price_to_display('wordpress-penna...')
+#1 /app/wp-includes/template-loader.php(106): include('/app/wp-content...')
+#2 /app/wp-blog-header.php(19): require_once('/app/wp-include...')
+#3 /app/index.php(17): require('/app/wp-blog-he...')
+#4 {main}
+  thrown en /app/wp-content/plugins/woocommerce/includes/wc-product-functions.php en la línea 1126
+
+2023-09-22T04:01:43+00:00 CRITICAL Uncaught Error: Call to a member function get_image_id() on string in /app/wp-content/plugins/woocommerce/templates/single-product/product-image.php:28
+Stack trace:
+#0 /app/wp-content/plugins/woocommerce/includes/wc-core-functions.php(345): include()
+#1 /app/wp-content/plugins/woocommerce/includes/wc-template-functions.php(1564): wc_get_template('single-product/...')
+#2 /app/wp-content/themes/customecommerce/single-product.php(17): woocommerce_show_product_images()
+#3 /app/wp-includes/template-loader.php(106): include('/app/wp-content...')
+#4 /app/wp-blog-header.php(19): require_once('/app/wp-include...')
+#5 /app/index.php(17): require('/app/wp-blog-he...')
+#6 {main}
+  thrown en /app/wp-content/plugins/woocommerce/templates/single-product/product-image.php en la línea 28
+
+2023-09-22T04:01:57+00:00 CRITICAL Uncaught Error: Call to a member function get_type() on string in /app/wp-content/plugins/woocommerce/includes/wc-template-functions.php:1358
+Stack trace:
+#0 /app/wp-content/themes/customecommerce/single-product.php(35): woocommerce_template_loop_add_to_cart()
+#1 /app/wp-includes/template-loader.php(106): include('/app/wp-content...')
+#2 /app/wp-blog-header.php(19): require_once('/app/wp-include...')
+#3 /app/index.php(17): require('/app/wp-blog-he...')
+#4 {main}
+  thrown en /app/wp-content/plugins/woocommerce/includes/wc-template-functions.php en la línea 1358
+
