@@ -1,0 +1,12 @@
+/*	Archivo CSS para Juan
+*	
+*	A tener en cuenta:
+*	- No modificar otro archivo que no sea ese, si te parece que hace falta agregar una clase 
+*	me avisan y yo la agrego.
+*	- SOLO modificar estilos de clases que tengan el prefijo "tcp-" o "cv-" o que sea
+*	hija de estas.
+*	- Si vas a modificar un estilo de un elemento hijo de esa clase tiene que ser MUY 
+*	especifico, de lo contrario podrias modificar estilos de otros elementos.
+*	- Reducir al minimo el uso de !important (Es una mala practica usarlo demasiado)
+*
+*/

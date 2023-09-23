@@ -1,5 +1,9 @@
 <?php get_header(); ?>
 
-home content
+<div class="container">
+	<div class="tcp-homebanner">
+		
+	</div>
+</div>
 
 <?php get_footer(); ?>

@@ -20,8 +20,8 @@
 
 /* General */
 :root {
-	--primary: #9429ff;
-	--secondary: ;
+	--primary: #009042;
+	--secondary: #00602C;
 	--text: #6D6E70;
 }
 * {
@@ -48,7 +48,7 @@ p {
 *	Header 
 */
 .tcp-header {
-	background-color: #FFF;
+	background-color: var(--primary);
 	box-shadow: 0px 4px 7px 0px rgba(173, 170, 169, 0.60);
 	position: sticky;
 	z-index: 999;
@@ -64,6 +64,13 @@ p {
 	display: flex;
 	justify-content: space-between;
 	width: 100%;
+}
+.tcp-header__nav a,
+.tcp-header__nav span {
+	color: #FFFFFF;
+}
+.tcp-header__nav svg path {
+	fill: #FFF;
 }
 .tcp-header__logo img {
 	height: 32px;
@@ -82,7 +89,7 @@ p {
 }
 .tcp-header__primarynav a {
 	font-size: 16px;
-	color: #000;
+	color: #FFFFFF;
 }
 .tcp-header__secondarynav a {
 	display: flex;
@@ -97,7 +104,7 @@ p {
 	height: 37px;
 	align-items: center;
 	justify-content: center;
-	background-color: var(--primary);
+	background-color: var(--secondary);
 	border-radius: 100px;
 	color: #FFF;
 }
