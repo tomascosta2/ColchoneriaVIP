@@ -2,7 +2,7 @@ name: colchoneriavip
 recipe: wordpress
 proxy:
   appserver:
-    - colchoneriavip.local
+    - customecom.local
 config:
   php: '7.4'
   via: apache
