@@ -16,19 +16,14 @@
 *
 */
 
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&display=swap');
-
 /* General */
 :root {
 	--primary: #009042;
 	--secondary: #00602C;
 	--text: #6D6E70;
 }
-* {
-	font-family: 'Poppins', sans-serif;
-}
 body {
-	background: #FFF !important;
+	background: #F8F8F8 !important;
 }
 ul {
 	margin-bottom: 0;
@@ -39,6 +34,9 @@ a {
 }
 p {
 	margin-bottom: 0;
+}
+.site-main {
+	padding-bottom: 0;
 }
 .woocommerce {
 	max-width: unset !important;
@@ -147,6 +145,10 @@ p {
 	justify-content: center;
 	align-items: center;
 }
+.tcp-productmin img {
+	max-width: 100%;
+}
+
 
 /*
 *	Related Products

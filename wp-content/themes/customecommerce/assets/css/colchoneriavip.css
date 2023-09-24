@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap');
+
+/* General */
+:root {
+	--primary: #009042;
+	--secondary: #00602C;
+	--text: #6D6E70;
+}
+* {
+	font-family: 'Lato', sans-serif !important;
+}
+
+/*
+*	Buttons
+*/
+.cv-btn {
+	background-color: var(--secondary) !important;
+	border-radius: 5px !important;
+}
+
+/*
+*	Titles
+*/
+.cv-title {
+	position: relative;
+	text-align: center;
+	font-size: 30px;
+	font-weight: 900;
+}
+.cv-title::before {
+	content: '';
+	position: absolute;
+	bottom: -12px;
+	left: calc(50% - 40px);
+	background-color: var(--primary);
+	width: 80px;
+	height: 4px;
+}
+.cv-title.text-white::before {
+	background-color: #FFFFFF;
+}
+
+/*
+*	Home
+*/
+.cv-homereviews {
+	background-color: var(--secondary);
+	padding: 60px 0;
+}
