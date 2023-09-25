@@ -25,7 +25,7 @@ $bannerLink = get_field('boton_banner', $post_id);
 	<section class="cv-homebeneficts">
 		<div class="row">
 			<div class="col-lg-4">
-				<div class="cv-homebeneficts__item">
+				<div class="cv-card">
 					<img src="<?php echo get_field('imagen_beneficio_1') ?>" alt="Colchones en Mendoza">
 					<div class="cv-homebeneficts__itembody">
 						<h5><?php echo get_field('titulo_beneficio_1') ?></h5>
@@ -34,7 +34,7 @@ $bannerLink = get_field('boton_banner', $post_id);
 				</div>
 			</div>
 			<div class="col-lg-4">
-				<div class="cv-homebeneficts__item">
+				<div class="cv-card">
 					<img src="<?php echo get_field('imagen_beneficio_2') ?>" alt="Colchones en Mendoza">
 					<div class="cv-homebeneficts__itembody">
 						<h5><?php echo get_field('titulo_beneficio_2') ?></h5>
@@ -43,7 +43,7 @@ $bannerLink = get_field('boton_banner', $post_id);
 				</div>
 			</div>
 			<div class="col-lg-4">
-				<div class="cv-homebeneficts__item">
+				<div class="cv-card">
 					<img src="<?php echo get_field('imagen_beneficio_3') ?>" alt="Colchones en Mendoza">
 					<div class="cv-homebeneficts__itembody">
 						<h5><?php echo get_field('titulo_beneficio_3') ?></h5>
@@ -98,16 +98,18 @@ $bannerLink = get_field('boton_banner', $post_id);
 		<?php get_template_part('template-parts/custom/featured-products'); ?>
 	</section>
 	<section class="cv-storedata">
-		<h2 class="cv-title"><?php echo get_field('titulo_3', $post_id); ?></h2>
+		<h2 class="cv-title"><?php echo get_field('titulo_4', $post_id); ?></h2>
 		<div class="row">
 			<div class="col-lg-6">
 				<div class="cv-card">
 					<?php echo get_field('mapa_ubicacion_1', $post_id) ?>
 					<div class="d-flex">
 						<img src="<?php echo get_field('imagen_ubicacion_1', $post_id) ?>" alt="Colchoneria en Mendoza 9 de Julio">
-						<h3><?php echo get_field('direccion_ubicacion_1', $post_id) ?></h3>
+						<div>
+							<h3><?php echo get_field('direccion_ubicacion_1', $post_id) ?></h3>
+							<span><?php echo get_field('datos_banner', $post_id) ?></span>
+						</div>
 					</div>
-					<span><?php echo get_field('datos_banner', $post_id) ?></span>
 				</div>
 			</div>
 			<div class="col-lg-6">
@@ -115,9 +117,11 @@ $bannerLink = get_field('boton_banner', $post_id);
 					<?php echo get_field('mapa_ubicacion_2', $post_id) ?>
 					<div class="d-flex">
 						<img src="<?php echo get_field('imagen_ubicacion_2', $post_id) ?>" alt="Colchoneria en Mendoza 9 de Julio">
-						<h3><?php echo get_field('direccion_ubicacion_2', $post_id) ?></h3>
+						<div>
+							<h3><?php echo get_field('direccion_ubicacion_2', $post_id) ?></h3>
+							<span><?php echo get_field('datos_banner', $post_id) ?></span>
+						</div>
 					</div>
-					<span><?php echo get_field('datos_banner', $post_id) ?></span>
 				</div>
 			</div>
 		</div>
