@@ -9,7 +9,7 @@ $bannerLink = get_field('boton_banner', $post_id);
 ?>
 
 <div class="container">
-	<div class="cv-homebanner">
+	<section class="cv-homebanner cv-card">
 		<div class="row">
 			<div class="col-lg-8">
 				<h1><?php echo get_field('titulo_banner', $post_id); ?></h1>
@@ -18,11 +18,11 @@ $bannerLink = get_field('boton_banner', $post_id);
 				<a href="<?php echo $bannerLink['url']; ?>"><?php echo $bannerLink['title']; ?></a>
 			</div>
 			<div class="col-lg-4">
-				<img src="<?php echo get_field('imagen_banner') ?>" alt="Colchones en Mendoza">
+				<img class="img-fluid" src="<?php echo get_field('imagen_banner') ?>" alt="Colchones en Mendoza">
 			</div>
 		</div>
-	</div>
-	<div class="cv-homebeneficts">
+	</section>
+	<section class="cv-homebeneficts">
 		<div class="row">
 			<div class="col-lg-4">
 				<div class="cv-homebeneficts__item">
@@ -52,15 +52,103 @@ $bannerLink = get_field('boton_banner', $post_id);
 				</div>
 			</div>
 		</div>
-	</div>
-	<div class="cv-featuredproducts">
-		<h2 class="cv-title"><?php echo get_field('titulo_1', $post_id); ?></h2>
-		<?php get_template_part('template-parts/custom/featured-products'); ?>
-	</div>
+	</section>
+	<section class="cv-homefeatured">
+		<div class="cv-featuredproducts">
+			<h2 class="cv-title"><?php echo get_field('titulo_1', $post_id); ?></h2>
+			<?php get_template_part('template-parts/custom/featured-products'); ?>
+		</div>
+	</section>
 </div>
 
 <section class="cv-homereviews">
-	<h2 class="cv-title text-white"><?php echo get_field('titulo_2', $post_id); ?></h2>
+	<div class="container">
+		<h2 class="cv-title text-white mb-5"><?php echo get_field('titulo_2', $post_id); ?></h2>
+		<div class="row">
+			<div class="col-lg-4">
+				<div class="cv-card h-100">
+					<img src="<?php echo get_field('foto_opinion_1', $post_id) ?>" alt="Cliente Colchoneria VIP">
+					<h5><?php echo get_field('nombre_opinion_1', $post_id); ?></h5>
+					<span><?php echo get_field('texto_opinion_1', $post_id); ?></span>
+					<img src="/wp-content/themes/customecommerce/assets/images/<?php echo get_field('estrellas_opinion_1', $post_id) ?>-stars" alt="Review Colchoneria VIP">
+				</div>
+			</div>
+			<div class="col-lg-4">
+				<div class="cv-card h-100">
+					<img src="<?php echo get_field('foto_opinion_2', $post_id) ?>" alt="Cliente Colchoneria VIP">
+					<h5><?php echo get_field('nombre_opinion_2', $post_id); ?></h5>
+					<span><?php echo get_field('texto_opinion_2', $post_id); ?></span>
+					<img src="/wp-content/themes/customecommerce/assets/images/<?php echo get_field('estrellas_opinion_2', $post_id) ?>-stars" alt="Review Colchoneria VIP">
+				</div>
+			</div>
+			<div class="col-lg-4">
+				<div class="cv-card h-100">
+					<img src="<?php echo get_field('foto_opinion_3', $post_id) ?>" alt="Cliente Colchoneria VIP">
+					<h5><?php echo get_field('nombre_opinion_3', $post_id); ?></h5>
+					<span><?php echo get_field('texto_opinion_3', $post_id); ?></span>
+					<img src="/wp-content/themes/customecommerce/assets/images/<?php echo get_field('estrellas_opinion_3', $post_id) ?>-stars" alt="Review Colchoneria VIP">
+				</div>
+			</div>
+		</div>
+	</div>
 </section>
+<div class="container">
+	<section class="cv-featuredproducts">
+		<h2 class="cv-title"><?php echo get_field('titulo_3', $post_id); ?></h2>
+		<?php get_template_part('template-parts/custom/featured-products'); ?>
+	</section>
+	<section class="cv-storedata">
+		<h2 class="cv-title"><?php echo get_field('titulo_3', $post_id); ?></h2>
+		<div class="row">
+			<div class="col-lg-6">
+				<div class="cv-card">
+					<?php echo get_field('mapa_ubicacion_1', $post_id) ?>
+					<div class="d-flex">
+						<img src="<?php echo get_field('imagen_ubicacion_1', $post_id) ?>" alt="Colchoneria en Mendoza 9 de Julio">
+						<h3><?php echo get_field('direccion_ubicacion_1', $post_id) ?></h3>
+					</div>
+					<span><?php echo get_field('datos_banner', $post_id) ?></span>
+				</div>
+			</div>
+			<div class="col-lg-6">
+				<div class="cv-card">
+					<?php echo get_field('mapa_ubicacion_2', $post_id) ?>
+					<div class="d-flex">
+						<img src="<?php echo get_field('imagen_ubicacion_2', $post_id) ?>" alt="Colchoneria en Mendoza 9 de Julio">
+						<h3><?php echo get_field('direccion_ubicacion_2', $post_id) ?></h3>
+					</div>
+					<span><?php echo get_field('datos_banner', $post_id) ?></span>
+				</div>
+			</div>
+		</div>
+		<div class="cv-storedata__sellers">
+			<div class="cv-card">
+				<img src="<?php echo get_field('imagen_vendedor_1', $post_id) ?>" alt="Vendedores de colchones mendoza">
+				<h5><?php echo get_field('nombre_vendedor_1', $post_id) ?></h5>
+				<span><?php echo get_field('datos_vendedor_1', $post_id); ?></span>
+			</div>
+			<div class="cv-card">
+				<img src="<?php echo get_field('imagen_vendedor_2', $post_id) ?>" alt="Vendedores de colchones mendoza">
+				<h5><?php echo get_field('nombre_vendedor_2', $post_id) ?></h5>
+				<span><?php echo get_field('datos_vendedor_2', $post_id); ?></span>
+			</div>
+			<div class="cv-card">
+				<img src="<?php echo get_field('imagen_vendedor_3', $post_id) ?>" alt="Vendedores de colchones mendoza">
+				<h5><?php echo get_field('nombre_vendedor_3', $post_id) ?></h5>
+				<span><?php echo get_field('datos_vendedor_3', $post_id); ?></span>
+			</div>
+			<div class="cv-card">
+				<img src="<?php echo get_field('imagen_vendedor_4', $post_id) ?>" alt="Vendedores de colchones mendoza">
+				<h5><?php echo get_field('nombre_vendedor_4', $post_id) ?></h5>
+				<span><?php echo get_field('datos_vendedor_4', $post_id); ?></span>
+			</div>
+			<div class="cv-card">
+				<img src="<?php echo get_field('imagen_vendedor_5', $post_id) ?>" alt="Vendedores de colchones mendoza">
+				<h5><?php echo get_field('nombre_vendedor_5', $post_id) ?></h5>
+				<span><?php echo get_field('datos_vendedor_5', $post_id); ?></span>
+			</div>
+		</div>
+	</section>
+</div>
 
 <?php get_footer(); ?>

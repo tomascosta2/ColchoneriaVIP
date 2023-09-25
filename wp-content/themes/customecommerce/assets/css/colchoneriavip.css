@@ -41,9 +41,25 @@
 }
 
 /*
+*	Card
+*/
+.cv-card {
+	background-color: #FFFFFF;
+	border: 1px solid #DDDDDD;
+	border-radius: 5px;
+	padding: 26px;
+}
+
+/*
 *	Home
 */
 .cv-homereviews {
 	background-color: var(--secondary);
 	padding: 60px 0;
+}
+.cv-storedata__sellers {
+	display: grid;
+	grid-template-columns: repeat(5, 1fr);
+	gap: 20px;
+	margin-top: 20px;
 }

@@ -1,13 +1,16 @@
 /*	Archivo CSS para Juan
 *	
 *	A tener en cuenta:
+*	- NO modificar clases genericas como cv-card, cv-btn, cv-title, etc.. si piensan que 
+*	hay que modificar alguna clase de este estilo me avisan y vemos como procedemos
 *	- Los tamaños y altura de los textos tiene que ser el mismo que en el diseño
 *	- No modificar otro archivo que no sea este, si te parece que hace falta agregar una clase 
-*	me avisan y yo la agrego.
+*	me avisan y yo la agrego o les explico como hacerlo.
 *	- SOLO modificar estilos de clases que tengan el prefijo "tcp-" o "cv-" (Colchoneria Vip) o que sea
 *	hija de estas.
 *	- Si vas a modificar un estilo de un elemento hijo de esa clase tiene que ser MUY 
 *	especifico, de lo contrario podrias modificar estilos de otros elementos.
-*	- Reducir al minimo el uso de !important (Es una mala practica usarlo demasiado)
+*	- Reducir al minimo el uso de !important (Es una mala practica usarlo demasiado) ya que si
+*	despues queremos pisar algun estilo no vamos a poder hacerlo sin aplicarle important tambien
 *
 */
