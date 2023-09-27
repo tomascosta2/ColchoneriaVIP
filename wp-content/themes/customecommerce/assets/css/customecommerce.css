@@ -96,15 +96,23 @@ p {
 	font-size: 14px;
 	color: var(--text) !important;
 }
+.tcp-header__cart {
+	position: relative;
+	padding-left: 20px;
+}
 .tcp-header__cartcount {
-	display: flex;
-	width: 37px;
-	height: 37px;
-	align-items: center;
-	justify-content: center;
-	background-color: var(--secondary);
-	border-radius: 100px;
-	color: #FFF;
+	position: absolute;
+    display: flex;
+    width: 20px;
+    height: 20px;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--secondary);
+    border-radius: 100px;
+    color: #FFF;
+    top: -6px;
+    right: -3px;
+	font-size: 12px;
 }
 
 /* 
