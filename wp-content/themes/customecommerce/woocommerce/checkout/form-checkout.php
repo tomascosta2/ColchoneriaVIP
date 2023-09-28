@@ -18,7 +18,11 @@
 if ( ! defined( 'ABSPATH' ) ) {
 	exit;
 }
+?>
 
+<a class="or-cart__back d-block mb-4" href="/">Volver</a>
+
+<?php
 // If checkout registration is disabled and not logged in, the user cannot checkout.
 if ( ! $checkout->is_registration_enabled() && $checkout->is_registration_required() && ! is_user_logged_in() ) {
 	echo esc_html( apply_filters( 'woocommerce_checkout_must_be_logged_in_message', __( 'You must be logged in to checkout.', 'woocommerce' ) ) );
@@ -43,6 +47,7 @@ do_action( 'woocommerce_before_checkout_form', $checkout );
 
 			<div class="col-lg-6">
 				<!-- Datos de la compra -->
+				<h2>Su pedido</h2>
 				<?php get_template_part('woocommerce/checkout/review-order'); ?>
 			</div>
 		</div>
