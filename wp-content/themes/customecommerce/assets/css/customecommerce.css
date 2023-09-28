@@ -247,8 +247,39 @@ p {
 /*
 *	Checkout
 */
-.tcp-checkout {
-	
+body.woocommerce-checkout {
+	background-color: #FFFFFF !important;
+}
+.tcp-checkout h2 {
+	font-size: 30px;
+	font-weight: 500;
+	color: var(--text);
+}
+.tcp-checkout__subhead {
+	font-size: 16px;
+	color: #6D6E70;
+}
+.tcp-checkout__review {
+	padding: 55px 93px 130px 93px;
+	margin-top: -55px;
+	background-color: #F8F8F8;
+	border-radius: 5px;
+}
+.tcp-checkout__review form,
+.tcp-checkout__review table {
+	border: none !important;
+}
+.tcp-checkout__review td,
+.tcp-checkout__review th {
+	border: none;
+}
+.tcp-checkout__review th {
+	text-align: left;
+	padding-left: 0 !important;
+}
+.tcp-checkout__review td {
+	text-align: right;
+	padding-right: 0 !important;
 }
 
 /*

@@ -21,6 +21,7 @@ defined( 'ABSPATH' ) || exit;
 <div class="woocommerce-billing-fields">
 
 	<h2>Finalizar compra</h2>
+	<hr>
 	<h2>Información de contacto</h2>
 	<p>
 		Introduce la dirección de correo electrónico que quieres utilizar para recibir
