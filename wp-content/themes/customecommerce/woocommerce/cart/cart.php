@@ -6,7 +6,7 @@ $total_products = count($cart_items);
 <div class="row tcp-cart__header">
 	<div class="col-lg-8">
 		<a class="tcp-cart__back" href="/">Volver</a>
-		<h1 class="tcp-cart__title">Mi carro</h1>
+		<h1 class="tcp-cart__title">Mi carrito</h1>
 	</div>
 	<div class="col-lg-4">
 		<h2>Carritos totales</h2>
