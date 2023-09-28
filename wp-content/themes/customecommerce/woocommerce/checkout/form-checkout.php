@@ -28,9 +28,13 @@ if ( ! defined( 'ABSPATH' ) ) {
 		echo esc_html( apply_filters( 'woocommerce_checkout_must_be_logged_in_message', __( 'You must be logged in to checkout.', 'woocommerce' ) ) );
 		return;
 	}
-
-	do_action( 'woocommerce_before_checkout_form', $checkout );
 	?>
+
+	<div class="row">
+		<div class="col-lg-6">
+			<?php do_action( 'woocommerce_before_checkout_form', $checkout ); ?>
+		</div>
+	</div>
 
 	<form name="checkout" method="post" class="mt-4 checkout woocommerce-checkout" action="<?php echo esc_url( wc_get_checkout_url() ); ?>" enctype="multipart/form-data">
 
@@ -51,7 +55,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 					<div class="or-checkout__review">
 						<!-- Datos de la compra -->
 						<h2>Su pedido</h2>
-						<hr>
+						<hr class="mb-0">
 						<?php get_template_part('woocommerce/checkout/review-order'); ?>
 						<h5>Garantía de reembolso de 30 días.</h5>
 						<p class="or-checkout__subhead">Confiamos tanto en nuestros productos y servicios de WordPress que ofrecemos una garantía de reembolso de 30 días si no quedás satisfecho.</p>

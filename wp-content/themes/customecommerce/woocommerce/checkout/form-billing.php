@@ -23,7 +23,7 @@ defined( 'ABSPATH' ) || exit;
 	<h2>Finalizar compra</h2>
 	<hr>
 	<h2>Información de contacto</h2>
-	<p>
+	<p class="mb-4">
 		Introduce la dirección de correo electrónico que quieres utilizar para recibir
 		la confirmación del pedido y acceder a tu cuenta más adelante. Si ya tienes una 
 		cuenta, accede.

@@ -244,42 +244,85 @@ p {
 	color: var(--text);
 }
 
-/*
-*	Checkout
+/* 
+*	Checkout 
 */
 body.woocommerce-checkout {
 	background-color: #FFFFFF !important;
 }
-.tcp-checkout h2 {
+.or-checkout h2 {
 	font-size: 30px;
 	font-weight: 500;
 	color: var(--text);
 }
-.tcp-checkout__subhead {
+.or-checkout__subhead {
 	font-size: 16px;
 	color: #6D6E70;
 }
-.tcp-checkout__review {
+.or-checkout__customerdetails label {
+	font-size: 16px;
+	line-height: 24px !important;
+	font-weight: 600;
+	color: var(--text);
+	margin-bottom: 8px;
+}
+.or-checkout__customerdetails input,
+.or-checkout__customerdetails textarea,
+.or-checkout__customerdetails .select2 {
+	border: 1px solid #D9D9D9;
+	color: var(--text);
+	font-size: 12px;
+	border-radius: 5px;
+	resize: none;
+	min-height: 40px;
+}
+.or-checkout__customerdetails .select2 {
+	display: flex;
+	align-items: center;
+}
+.select2-selection__rendered {
+	color: var(--text) !important;
+}
+.or-checkout__customerdetails .select2-selection__arrow {
+	top: 6px !important;
+	right: 10px !important;
+}
+.or-checkout__customerdetails .select2 .select2-selection {
+	border: none;
+}
+.or-checkout__review {
 	padding: 55px 93px 130px 93px;
 	margin-top: -55px;
 	background-color: #F8F8F8;
 	border-radius: 5px;
 }
-.tcp-checkout__review form,
-.tcp-checkout__review table {
+.or-checkout__review form,
+.or-checkout__review table {
 	border: none !important;
 }
-.tcp-checkout__review td,
-.tcp-checkout__review th {
+.or-checkout__review td,
+.or-checkout__review th {
 	border: none;
+	padding: 24px 0 !important;
+	color: var(--text);
 }
-.tcp-checkout__review th {
+.or-checkout__review th {
 	text-align: left;
-	padding-left: 0 !important;
 }
-.tcp-checkout__review td {
+.or-checkout__review td {
 	text-align: right;
-	padding-right: 0 !important;
+}
+.or-checkout__review tfoot tr:last-child th,
+.or-checkout__review tfoot tr:last-child td {
+	font-size: 18px;
+}
+.or-checkout__review tfoot tr:last-child th {
+	text-transform: uppercase;
+}
+.or-checkout__review h5 {
+	font-size: 22px;
+	color: var(--text);
+	font-weight: 600;
 }
 
 /*
