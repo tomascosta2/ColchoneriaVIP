@@ -20,7 +20,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 }
 ?>
 
-<a class="or-cart__back d-block mb-4" href="/">Volver</a>
+<a class="or-cart__back d-block mb-4" href="/cart">Volver</a>
 
 <?php
 // If checkout registration is disabled and not logged in, the user cannot checkout.
@@ -32,7 +32,7 @@ if ( ! $checkout->is_registration_enabled() && $checkout->is_registration_requir
 do_action( 'woocommerce_before_checkout_form', $checkout );
 ?>
 
-<form name="checkout" method="post" class="checkout woocommerce-checkout" action="<?php echo esc_url( wc_get_checkout_url() ); ?>" enctype="multipart/form-data">
+<form name="checkout" method="post" class="mt-4 checkout woocommerce-checkout" action="<?php echo esc_url( wc_get_checkout_url() ); ?>" enctype="multipart/form-data">
 
 	<?php if ( $checkout->get_checkout_fields() ) : ?>
 
@@ -49,6 +49,8 @@ do_action( 'woocommerce_before_checkout_form', $checkout );
 				<!-- Datos de la compra -->
 				<h2>Su pedido</h2>
 				<?php get_template_part('woocommerce/checkout/review-order'); ?>
+				<h5>Garantía de reembolso de 30 días.</h5>
+				<p>Confiamos tanto en nuestros productos y servicios de WordPress que ofrecemos una garantía de reembolso de 30 días si no quedás satisfecho.</p>
 			</div>
 		</div>
 
