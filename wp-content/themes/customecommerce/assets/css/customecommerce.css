@@ -72,8 +72,8 @@ p {
 	fill: #FFF;
 }
 .tcp-header__logo img {
-	height: 32px;
-	width: auto;
+    height: auto;
+    width: 153px;
 }
 .tcp-header__toggle {
 	display: none;
@@ -416,7 +416,7 @@ body.woocommerce-checkout {
 		font-size: 12px;
 	}
 	.tcp-header__logo img {
-		height: 40px;
+		width: 100px;
 	}
 	.tcp-header__inner {
 		gap: unset;
