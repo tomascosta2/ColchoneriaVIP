@@ -3,7 +3,7 @@ $cart_items = WC()->cart->get_cart();
 $total_products = count($cart_items);
 ?>
 
-<div class="row">
+<div class="row tcp-cart__header">
 	<div class="col-lg-8">
 		<a class="tcp-cart__back" href="/">Volver</a>
 		<h1 class="tcp-cart__title">Mi carro</h1>
@@ -12,13 +12,13 @@ $total_products = count($cart_items);
 		<h2>Carritos totales</h2>
 	</div>
 </div>
-<div class="row py-5">
+<div class="row py-3">
 	<div class="col-md-8 pe-4">
 		<?php do_action( 'woocommerce_before_cart' ); ?>
-		<form class="tcp-cart__form woocommerce-cart-form" action="<?php echo esc_url( wc_get_cart_url() ); ?>" method="post" id="FormCart">
+		<form class="tcp-cart__form tcp-card woocommerce-cart-form" action="<?php echo esc_url( wc_get_cart_url() ); ?>" method="post" id="FormCart">
 			<?php do_action( 'woocommerce_before_cart_table' ); ?>
 		
-			<div class="row or-cart__th">
+			<div class="row tcp-cart__th">
 				<div class="col-md-9">
 					<span class="tcp-title-icon --shop mb-3">Producto</span>
 				</div>
@@ -56,13 +56,16 @@ $total_products = count($cart_items);
 
 							// Thumbnail
 							$thumbnail = apply_filters( 'woocommerce_cart_item_thumbnail', $_product->get_image(), $cart_item, $cart_item_key );
-							printf('<a href="%s" class="tcp-product-thumbnail">%s</a>', esc_url( $product_permalink ), $thumbnail ); // PHPCS: XSS ok.
+							printf('<a href="%s" class="tcp-cart__productthumb d-flex align-items-center justify-content-start">%s</a>', esc_url( $product_permalink ), $thumbnail ); // PHPCS: XSS ok.
 
+							echo '<div>'; // Inicio detalles y cantidad
 							// Título Producto
-							echo '<div class="me-4">';
-							echo '<h3 class="tcp-cart__itemtitle">' . $_product->get_name() . '</h3>';
-							echo '<span class="tcp-cart__itemdata">Detalle</span>';
-							do_action( 'woocommerce_after_cart_item_name', $cart_item, $cart_item_key );
+							echo '<div>';
+							echo 	'<div class="me-4">';
+							echo 	'<h3 class="tcp-cart__itemtitle">' . $_product->get_name() . '</h3>';
+							echo 	'<span class="tcp-cart__itemdata">Cantidad</span>';
+									do_action( 'woocommerce_after_cart_item_name', $cart_item, $cart_item_key );
+							echo '</div>';
 
 							// Meta data.
 							echo wc_get_formatted_cart_item_data( $cart_item ); // PHPCS: XSS ok.
@@ -90,7 +93,7 @@ $total_products = count($cart_items);
 								'input_value'  => $cart_item['quantity'],
 								'max_value'    => $max_quantity,
 								'min_value'    => $min_quantity,
-								'classes' 	   => 'or-spinner__input',
+								'classes' 	   => '',
 							),
 							$_product,
 							false
@@ -118,6 +121,7 @@ $total_products = count($cart_items);
 							$cart_item_key
 						);
 						echo '</div>';
+						echo '</div>'; // Fin detalles y cantidad
 						
 						?>
 					</div>
@@ -167,9 +171,7 @@ $total_products = count($cart_items);
 		</form>
 	</div>
 	<div class="col-md-4 ps-0">
-		<div class="tcp-cart__collaterals cart-collaterals">
-			<?php do_action( 'woocommerce_cart_collaterals' ); ?>
-		</div>
+		<?php do_action( 'woocommerce_cart_collaterals' ); ?>
 	</div>
 </div>
 

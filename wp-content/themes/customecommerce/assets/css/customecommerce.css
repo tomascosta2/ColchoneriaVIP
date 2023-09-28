@@ -21,6 +21,7 @@
 	--primary: #009042;
 	--secondary: #00602C;
 	--text: #6D6E70;
+	--borders: #DDDDDD;
 }
 body {
 	background: #F8F8F8 !important;
@@ -94,7 +95,9 @@ p {
 	align-items: center;
 	gap: 11px;
 	font-size: 14px;
-	color: var(--text) !important;
+}
+.tcp-header a[class*="-btn"] {
+	font-size: 12px !important;
 }
 .tcp-header__cart {
 	position: relative;
@@ -187,12 +190,75 @@ p {
 .woocommerce-page .cart-collaterals .cart_totals {
 	width: 100%;
 }
+.tcp-cart__header > div:last-child {
+	padding-top: 20px;
+}
+.tcp-cart__header h1,
+.tcp-cart__header h2 {
+	font-size: 30px;
+	font-weight: 600;
+	line-height: 100%;
+	margin-top: 16px;
+}
+.tcp-cart__form.tcp-card {
+	padding-top: 16px;
+}
+.tcp-cart__th {
+	padding-bottom: 14px;
+	border-bottom: 1px solid var(--borders);
+}
+.tcp-cart__productthumb {
+	width: 140px;
+	height: 140px;
+	object-fit: cover;
+}
+.tcp-cart__productthumb img {
+	border-radius: 5px;
+}
+.tcp-cart__collaterals table {
+	border: none !important;
+	padding: none !important;
+}
+.tcp-cart__collaterals table th,
+.tcp-cart__collaterals table td {
+	padding-left: 0 !important;
+	border-bottom: 1px solid var(--borders);
+}
+.tcp-cart__collaterals table td {
+	text-align: right;
+}
+.tcp-cartcollaterals__addcoupon {
+	cursor: pointer;
+	margin-top: 16px;
+}
+.tcp-cartcollaterals__coupon input {
+	width: 180px;
+}
+.tcp-cartcollaterals__coupon button {
+	max-width: 80px;
+	padding: 10px;
+}
+.tcp-cart__price {
+	font-size: 22px;
+	font-weight: 600;
+	color: var(--text);
+}
 
 /*
 *	Checkout
 */
 .tcp-checkout {
 	
+}
+
+/*
+*	Card
+*/
+.tcp-card {
+	background-color: #FFFFFF;
+	border: 1px solid var(--borders);
+	border-radius: 5px;
+	padding: 26px;
 }
 
 /* 
