@@ -56,8 +56,8 @@ p {
 .tcp-header__inner {
 	display: flex;
 	align-items: center;
-	height: 73px;
-	gap: 70px;
+	height: 56px;
+	justify-content: space-between;
 }
 .tcp-header__nav {
 	display: flex;
@@ -71,26 +71,28 @@ p {
 .tcp-header__nav svg path {
 	fill: #FFF;
 }
-.tcp-header__logo img {
-    height: auto;
-    width: 153px;
+.tcp-header__logo {
+    font-size: 18px;
+	color: #FFF !important;
+	font-weight: 600;
+	width: max-content;
 }
 .tcp-header__toggle {
 	display: none;
 }
-.tcp-header__primarynav,
-.tcp-header__secondarynav {
+.tcp-header__nav.--primary,
+.tcp-header__nav.--secondary {
 	height: 100%;
 	display: flex;
 	align-items: center;
 	list-style: none;
 	gap: 20px;
 }
-.tcp-header__primarynav a {
+.tcp-header__nav.--primary a {
 	font-size: 16px;
 	color: #FFFFFF;
 }
-.tcp-header__secondarynav a {
+.tcp-header__nav.--secondary a {
 	display: flex;
 	align-items: center;
 	gap: 11px;
@@ -100,8 +102,8 @@ p {
 	font-size: 12px !important;
 }
 .tcp-header__cart {
-	position: relative;
-	padding-left: 20px;
+    position: relative;
+    padding-right: 4px;
 }
 .tcp-header__cartcount {
 	position: absolute;
