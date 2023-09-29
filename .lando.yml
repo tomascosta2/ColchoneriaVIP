@@ -1,4 +1,4 @@
-name: colchoneriavip
+name: colchoneriavip 
 recipe: wordpress
 proxy:
   appserver:

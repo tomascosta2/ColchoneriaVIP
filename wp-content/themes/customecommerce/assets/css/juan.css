@@ -14,3 +14,111 @@
 *	despues queremos pisar algun estilo no vamos a poder hacerlo sin aplicarle important tambien
 *
 */
+:root {
+	--primary: #009042;
+	--secondary: #00602C;
+	--text: #6D6E70;
+}
+
+.site-content{
+    padding: 60px 120px;
+}
+
+.cv-card{
+    padding: 45px;
+}
+
+.col-lg-8 h1{
+    font-weight: 800;
+    color: var(--primary);
+    max-width: 95%;
+}
+
+.col-lg-8 p{
+    font-size: 10pt;
+    max-width: 95%;
+    color: #000000;
+}
+
+.cv-homebanner .row .col-lg-8 {
+    padding: 0 2rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.cv-homebanner .row .col-lg-8 span{
+    font-size: 10pt;
+    color: var(--text);
+    margin: 1rem 0 3rem 0;
+}
+
+.cv-homebanner .row .col-lg-8 a{
+    background-color: var(--primary);
+    color: white;
+    padding: 5px 35px;
+    border-radius: 5px;
+    width: 11rem;
+    text-align: center;
+}
+
+.cv-homebanner {
+    margin-bottom: 1rem;
+}
+
+.cv-homebeneficts .row .col-lg-4 .cv-card{
+    display: grid; 
+    grid-auto-flow: column; 
+    grid-template-columns: 0.5fr 1.5fr; 
+    grid-template-rows: 1fr; 
+    gap: 1em 1em; 
+    height: fit-content;
+    padding: 1rem;
+    align-items: center;
+    color: var(--primary);
+}
+
+.cv-homebeneficts .row .col-lg-4 .cv-card img{
+    transform: scale(0.8);
+    border-radius: 50%;
+    height: 100px;
+    width: 100px;
+    padding-top: 2rem;
+}
+
+.cv-homebeneficts__itembody h5{
+    font-size: 10pt;
+    font-weight: 600;
+}
+
+.cv-homebeneficts__itembody p{
+    font-size: 8pt;
+}
+
+.cv-homefeatured .cv-featuredproducts .cv-title{
+    margin-top: 8rem;
+}
+
+.tcp-productmin{
+    background-color: white;
+    padding: 1rem 1rem;
+}
+
+.tcp-productmin__body {
+    margin: 1rem 0 0.5rem 0;
+    width: -webkit-fill-available;
+}
+
+.tcp-productmin__body .cv-btn{
+    display: block;
+    margin-top: 1rem;
+    padding: 0.5rem 1.5rem;
+    text-align: center;
+    font-size: smaller;
+    background-color: var(--primary);
+}
+
+.cv-homereviews{
+    margin: 0 -120px;
+    width: 100vw;
+}
+
