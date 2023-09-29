@@ -19,47 +19,57 @@ if ( ! defined( 'ABSPATH' ) ) {
 	exit;
 }
 ?>
-<div class="container">
-	<?php
-	do_action( 'woocommerce_before_checkout_form', $checkout );
+<div class="or-checkout">
+	<a class="or-cart__back d-block mb-4" href="/cart">Volver</a>
 
+	<?php
 	// If checkout registration is disabled and not logged in, the user cannot checkout.
 	if ( ! $checkout->is_registration_enabled() && $checkout->is_registration_required() && ! is_user_logged_in() ) {
 		echo esc_html( apply_filters( 'woocommerce_checkout_must_be_logged_in_message', __( 'You must be logged in to checkout.', 'woocommerce' ) ) );
 		return;
 	}
-
 	?>
 
-	<form name="checkout" method="post" class="tcp-checkout" action="<?php echo esc_url( wc_get_checkout_url() ); ?>" enctype="multipart/form-data">
+	<div class="row">
+		<div class="col-lg-6">
+			<?php do_action( 'woocommerce_before_checkout_form', $checkout ); ?>
+		</div>
+	</div>
+
+	<form name="checkout" method="post" class="mt-4 checkout woocommerce-checkout" action="<?php echo esc_url( wc_get_checkout_url() ); ?>" enctype="multipart/form-data">
 
 		<?php if ( $checkout->get_checkout_fields() ) : ?>
 
 			<?php do_action( 'woocommerce_checkout_before_customer_details' ); ?>
 
-			<div class="col2-set" id="customer_details">
-				<div class="col-1">
-					<?php do_action( 'woocommerce_checkout_billing' ); ?>
+			<div class="row" id="customer_details">
+				<div class="col-lg-6">
+					<div class="or-checkout__customerdetails">
+						<!-- Formulario con detalles de facturacion -->
+						<?php do_action( 'woocommerce_checkout_billing' ); ?>
+						<?php do_action( 'woocommerce_checkout_shipping' ); ?>
+					</div>
 				</div>
 
-				<div class="col-2">
-					<?php do_action( 'woocommerce_checkout_shipping' ); ?>
+				<div class="col-lg-6">
+					<div class="or-checkout__review">
+						<!-- Datos de la compra -->
+						<h2>Su pedido</h2>
+						<hr class="mb-0">
+						<?php get_template_part('woocommerce/checkout/review-order'); ?>
+						<h5>Garantía de reembolso de 30 días.</h5>
+						<p class="or-checkout__subhead">Confiamos tanto en nuestros productos y servicios de WordPress que ofrecemos una garantía de reembolso de 30 días si no quedás satisfecho.</p>
+					</div>
 				</div>
 			</div>
 
 			<?php do_action( 'woocommerce_checkout_after_customer_details' ); ?>
-
 		<?php endif; ?>
-		
-		<?php do_action( 'woocommerce_checkout_before_order_review_heading' ); ?>
-		
-		<h3 id="order_review_heading"><?php esc_html_e( 'Your order', 'woocommerce' ); ?></h3>
-		
+			
 		<?php do_action( 'woocommerce_checkout_before_order_review' ); ?>
 
-		<div id="order_review" class="woocommerce-checkout-review-order">
-			<?php do_action( 'woocommerce_checkout_order_review' ); ?>
-		</div>
+		<!-- Metodos de pago -->
+		<?php get_template_part('woocommerce/checkout/payment') ?>
 
 		<?php do_action( 'woocommerce_checkout_after_order_review' ); ?>
 
