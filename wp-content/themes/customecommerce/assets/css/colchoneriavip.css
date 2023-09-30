@@ -30,10 +30,17 @@
 .cv-btn.--primary {
 	background-color: var(--primary) !important;
 }
+.cv-btn.--primary:hover {
+	background-color: var(--secondary) !important;
+}
 .cv-btn.--unfilled {
 	background-color: transparent !important;
 	border: 2px solid var(--primary) !important;
 	color: var(--primary) !important;
+}
+.cv-btn.--unfilled:hover {
+	background-color: var(--primary) !important;
+	color: #FFFFFF !important;
 }
 .cv-btn.--lg {
 	padding: 8px 60px;
