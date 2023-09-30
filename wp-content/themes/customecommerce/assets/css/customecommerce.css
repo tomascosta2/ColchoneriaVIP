@@ -140,15 +140,17 @@ p {
 }
 .tcp-footer__grid {
 	display: grid;
-	grid-template-columns: .5fr 1fr 1fr 1fr;
+	grid-template-columns: 1fr;
 }
 .tcp-footer__grid section {
 	display: flex;
 	justify-content: center;
 	align-items: center;
 }
-.tcp-footer__grid section:first-child {
-	justify-content: start;
+.tcp-footer__grid h3 {
+	color: #FFF;
+	font-weight: 600;
+	font-size: 32px;
 }
 
 .tcp-rightsfooter {

@@ -1,7 +1,7 @@
 <?php get_header(); ?>
 
 <div class="container">
-	<?php echo do_shortcode('[products columns="4" category="hoodies, tshirts" cat_operator="OR"]') ?>
+	<?php echo do_shortcode('[products columns="4"]') ?>
 </div>
 
 <?php get_footer(); ?>
