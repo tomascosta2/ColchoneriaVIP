@@ -65,14 +65,13 @@
     margin-bottom: 1rem;
 }
 
-.cv-homebeneficts .row .col-lg-4 .cv-card{
+.cv-homebeneficts .row .col-lg-4 .tcp-card{
     display: grid; 
     grid-auto-flow: column; 
     grid-template-columns: 0.5fr 1.5fr; 
     grid-template-rows: 1fr; 
-    gap: 1em 1em; 
+    padding-left: 2rem;
     height: fit-content;
-    padding: 1rem;
     align-items: center;
     color: var(--primary);
 }
@@ -91,6 +90,7 @@
 }
 
 .cv-homebeneficts__itembody p{
+    color: #000000;
     font-size: 8pt;
 }
 
@@ -122,10 +122,61 @@
     width: 100vw;
 }
 
-.cv-homereviews .container .row .col-lg-4 .cv-card img{
-    border-radius: 100%;
-    border: 2px solid black;
-    left: 50%;
+.cv-homereviews .container .row .col-lg-4 .tcp-card img{
     width: 80px;
     height: auto;
+}
+
+.cv-homereviews .container .row .col-lg-4 .tcp-card{
+    text-align: center;
+}
+
+.cv-homereviews .container .row .col-lg-4 .tcp-card h5{
+    font-weight: 800;
+    margin: 1rem 0;
+}
+
+.cv-storedata h2 {
+    margin-top: 8rem;
+    margin-bottom: 4rem;
+}
+
+.cv-storedata .row .col-lg-6 .tcp-card .d-flex img {
+    border-radius: 50%;
+    border: 2px solid black;
+    height: 75px;
+    width: 75px;
+}
+.cv-storedata .row .col-lg-6 .tcp-card .d-flex div{
+    margin-left: 1rem;
+}
+.cv-storedata .row .col-lg-6 .tcp-card .d-flex div h3{
+    font-weight: 900;
+    color: var(--secondary);
+}
+
+.cv-storedata .row .col-lg-6 .tcp-card .d-flex div span{
+    color: gray;
+    display: block;
+    width: 110px;
+}
+
+.cv-storedata__sellers .tcp-card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.cv-storedata__sellers .tcp-card img{
+    border-radius: 50%;
+}
+
+.cv-storedata__sellers .tcp-card h5{
+    margin-top: 1rem;
+    font-weight: 800;
+}
+
+.cv-storedata__sellers .tcp-card span{
+    font-size: small;
 }
