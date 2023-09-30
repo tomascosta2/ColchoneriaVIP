@@ -202,6 +202,9 @@ p {
 	line-height: 100%;
 	margin-top: 16px;
 }
+.tcp-cart__header .col-lg-4 {
+	padding-left: 0;
+}
 .tcp-cart__form.tcp-card {
 	padding-top: 16px;
 }
@@ -229,21 +232,60 @@ p {
 .tcp-cart__collaterals table td {
 	text-align: right;
 }
-.tcp-cartcollaterals__addcoupon {
+.tcp-cart__coupon {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	height: 36px;
+}
+.tcp-cart__addcoupon {
 	cursor: pointer;
-	margin-top: 16px;
+	color: #444;
 }
-.tcp-cartcollaterals__coupon input {
-	width: 180px;
+.tcp-cart__coupon input {
+	width: 150px;
+	border: 1px solid var(--borders);
+	border-radius: 5px;
+	height: 36px;
+	font-size: 14px;
 }
-.tcp-cartcollaterals__coupon button {
+.tcp-cart__coupon button {
 	max-width: 80px;
-	padding: 10px;
+	height: 36px;
+	font-size: 14px;
 }
 .tcp-cart__price {
 	font-size: 22px;
 	font-weight: 600;
 	color: var(--text);
+}
+.tcp-cart__itemtitle {
+	font-size: 18px;
+	font-weight: 600;
+}
+.tcp-spinner {
+	width: fit-content;
+}
+.tcp-spinner input {
+	border: 1px solid var(--borders);
+	border-radius: 5px;
+	padding: 5px;
+	width: 60px;
+}
+.tcp-cart__itemprice {
+	font-weight: 600;
+}
+.tcp-cart__itemprice.--regular {
+	font-size: 14px;
+	color: #AEAEAE;
+	text-decoration:line-through;
+}
+.tcp-cart__itemprice.--sale {
+	font-size: 17px;
+	color: #222;
+}
+.tcp-cart__remove {
+	color: #444;
 }
 
 /* 
