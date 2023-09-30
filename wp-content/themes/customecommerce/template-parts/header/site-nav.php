@@ -24,7 +24,7 @@
 	<nav id="site-navigation" aria-label="<?php esc_attr_e( 'Primary menu', 'twentytwentyone' ); ?>">
 		<ul class="tcp-header__nav --secondary">
 			<li>
-				<a href="https://wa.me/+5492614713096" class="cv-btn --primary" target="_blank">Contacto</a>
+				<a href="https://wa.me/+5492614713096" class="cv-btn" target="_blank">Contacto</a>
 			</li>
 			<li>
 				<a href="#">

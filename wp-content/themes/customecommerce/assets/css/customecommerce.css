@@ -393,18 +393,18 @@ body.woocommerce-checkout {
 	height: 53px;
 	overflow: hidden;
 }	
-.tcp-productmin__prices {
+.tcp-product__prices {
 	display: flex;
 	align-items: center;
 	gap: 10px;
 	margin: 10px 0 14px 0;
 }
-.tcp-productmin__prices .--regular {
+.tcp-product__prices .--regular {
 	text-decoration: line-through;
 	color: var(--text);
 	font-weight: 600;
 }
-.tcp-productmin__prices .--discount {
+.tcp-product__prices .--discount {
 	font-size: 18px;
 	font-weight: 600;
 }
@@ -418,6 +418,32 @@ body.woocommerce-checkout {
 */
 .woocommerce-product-gallery__trigger {
 	display: none;
+}
+.woocommerce-product-gallery__image {
+	height: 380px;
+}
+.woocommerce-product-gallery img {
+	border: 1px solid var(--borders);
+	border-radius: 5px;
+	object-fit: contain;
+	background-color: #FFF;
+}
+.tcp-productview__main {
+	padding-top: 30px;
+}
+.tcp-productview__main h1 {
+	font-size: 42px;
+	font-weight: 900;
+}
+.tcp-productview__main .tcp-product__prices .--regular {
+	font-size: 24px;
+}
+.tcp-productview__main .tcp-product__prices .--discount {
+	font-size: 32px;
+	font-weight: 900;
+}
+.tcp-productview__main a[class*='-btn'] {
+	display: block;
 }
 
 /* 

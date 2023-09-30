@@ -23,6 +23,17 @@
 	border: none !important;
 	display: block;
 	width: fit-content;
+	display: flex !important;
+	align-items: center;
+	justify-content: center;
+}
+.cv-btn.--primary {
+	background-color: var(--primary) !important;
+}
+.cv-btn.--unfilled {
+	background-color: transparent !important;
+	border: 2px solid var(--primary) !important;
+	color: var(--primary) !important;
 }
 .cv-btn.--lg {
 	padding: 8px 60px;

@@ -18,7 +18,7 @@ if ( empty( $product ) || ! $product->is_visible() ) {
 	<div class="tcp-productmin__body">
 		<h3><a href="<?php echo $link ?>"><?php echo get_the_title(); ?></a></h3>
 		<p class="tcp-productmin__desc"><?php echo $product->get_description(); ?></p>
-		<div class="tcp-productmin__prices">
+		<div class="tcp-product__prices">
 			<div class="--regular"><?php echo wc_price($regularPrice); ?></div>
 			<div class="--discount"><?php echo wc_price($discountPrice); ?></div>
 		</div>

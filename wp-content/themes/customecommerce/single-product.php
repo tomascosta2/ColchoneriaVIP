@@ -16,26 +16,30 @@ get_header();
 				?>
 			</div>
 			<div class="col-lg-6">
-				<h1><?php echo get_the_title(); ?></h1>
-				<div class="tcp-productview__quality">
-					<span>Prueba de calidad</span>
+				<div class="tcp-productview__main">
+					<h1><?php echo get_the_title(); ?></h1>
+					<div class="tcp-productview__quality">
+						<span>Prueba de calidad</span>
+					</div>
+					<div class="tcp-product__prices">
+						<?php
+						if ( $discountPrice ) {
+							echo '<span class="tcp-productview__regularprice --regular">' . wc_price($regularPrice) . '</span> ';
+							echo '<span class="tcp-productview__dicountprice --discount">' . wc_price($discountPrice) . '</span>';
+						} else {
+							echo '<span class="tcp-productview__regularprice --discount">' . wc_price($regularPrice) . '</span> ';
+						}
+						?>
+					</div>
+					<?php echo get_the_content(); ?>
+					<div class="d-flex gap-2 mt-3">
+						<a class="cv-btn --unfilled" href="https://wa.me/+5492614713096">Hablar con ventas</a>
+						<?php echo woocommerce_template_loop_add_to_cart(); ?>
+					</div>
 				</div>
-				<div class="d-flex gap-3">
-					<?php
-					if ( $discountPrice ) {
-						echo '<span class="tcp-productview__regularprice">' . $regularPrice . '</span> ';
-						echo '<span class="tcp-productview__dicountprice">' . $discountPrice . '</span>';
-					} else {
-						echo '<span class="tcp-productview__regularprice">' . $regularPrice . '</span> ';
-					}
-					?>
-				</div>
-				<?php echo get_the_content(); ?>
-				<?php echo woocommerce_template_loop_add_to_cart(); ?>
 			</div>
 		</div>
 		<div class="tcp-productview__info">
-			Aca van los atributos
 		</div>
 		<div class="tcp-relatedproducts">
 			<?php 
