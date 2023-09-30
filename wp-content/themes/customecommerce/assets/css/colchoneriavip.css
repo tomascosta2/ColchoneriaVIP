@@ -8,6 +8,7 @@
 }
 * {
 	font-family: 'Lato', sans-serif !important;
+	letter-spacing: 0 !important;
 }
 
 /*
@@ -18,9 +19,15 @@
 	border-radius: 5px !important;
 	color: #FFFFFF !important;
 	font-weight: 600;
-	padding: 5px 20px;
+	padding: 8px 30px;
 	border: none !important;
+	display: block;
+	width: fit-content;
 }
+.cv-btn.--lg {
+	padding: 8px 60px;
+}
+
 
 /*
 *	Titles
@@ -58,6 +65,3 @@
 	margin-top: 20px;
 }
 
-/*
-*	Cart
-*/

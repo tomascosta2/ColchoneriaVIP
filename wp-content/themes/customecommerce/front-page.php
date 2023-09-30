@@ -15,7 +15,7 @@ $bannerLink = get_field('boton_banner', $post_id);
 				<h1><?php echo get_field('titulo_banner', $post_id); ?></h1>
 				<p><?php echo get_field('bajada_banner') ?></p>
 				<span><?php echo get_field('datos_banner') ?></span>
-				<a href="<?php echo $bannerLink['url']; ?>"><?php echo $bannerLink['title']; ?></a>
+				<a class="cv-btn --primary" href="<?php echo $bannerLink['url']; ?>"><?php echo $bannerLink['title']; ?></a>
 			</div>
 			<div class="col-lg-4">
 				<img class="img-fluid" src="<?php echo get_field('imagen_banner') ?>" alt="Colchones en Mendoza">
@@ -55,8 +55,9 @@ $bannerLink = get_field('boton_banner', $post_id);
 	</section>
 	<section class="cv-homefeatured">
 		<div class="cv-featuredproducts">
-			<h2 class="cv-title"><?php echo get_field('titulo_1', $post_id); ?></h2>
+			<h2 class="cv-title mb-5"><?php echo get_field('titulo_1', $post_id); ?></h2>
 			<?php get_template_part('template-parts/custom/featured-products'); ?>
+			<a class="cv-btn --lg mx-auto mt-5" href="/categoria-producto/colchones">Ver más</a>
 		</div>
 	</section>
 </div>
@@ -94,8 +95,9 @@ $bannerLink = get_field('boton_banner', $post_id);
 </section>
 <div class="container">
 	<section class="cv-featuredproducts">
-		<h2 class="cv-title"><?php echo get_field('titulo_3', $post_id); ?></h2>
+		<h2 class="cv-title mb-5"><?php echo get_field('titulo_3', $post_id); ?></h2>
 		<?php get_template_part('template-parts/custom/featured-products'); ?>
+		<a class="cv-btn --lg mx-auto mt-5" href="/categoria-producto/colchones">Ver más</a>
 	</section>
 	<section class="cv-storedata">
 		<h2 class="cv-title"><?php echo get_field('titulo_4', $post_id); ?></h2>

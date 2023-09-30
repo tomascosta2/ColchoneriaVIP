@@ -150,20 +150,6 @@ p {
 }
 
 /*
-*	Product Miniature
-*/
-.tcp-productmin {
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
-}
-.tcp-productmin img {
-	max-width: 100%;
-}
-
-
-/*
 *	Related Products
 */
 .tcp-relatedproducts ul::after,
@@ -284,7 +270,8 @@ p {
 	font-size: 17px;
 	color: #222;
 }
-.tcp-cart__remove {
+.tcp-cart__remove,
+.tcp-cart__back {
 	color: #444;
 }
 
@@ -377,6 +364,53 @@ body.woocommerce-checkout {
 	border: 1px solid var(--borders);
 	border-radius: 5px;
 	padding: 26px;
+}
+
+/*
+*	Product Miniature
+*/
+.tcp-productmin {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	padding-top: 0 !important;
+}
+.tcp-productmin img {
+	max-width: 100%;
+}
+.tcp-productmin h3 {
+	font-size: 18px;
+	font-weight: 600;
+}
+.tcp-productmin h3 a {
+	color: #222;
+}
+.tcp-productmin__desc {
+	font-size: 14px;
+	color: var(--text);
+	line-height: 120%;
+	height: 53px;
+	overflow: hidden;
+}	
+.tcp-productmin__prices {
+	display: flex;
+	align-items: center;
+	gap: 10px;
+	margin: 10px 0 14px 0;
+}
+.tcp-productmin__prices .--regular {
+	text-decoration: line-through;
+	color: var(--text);
+	font-weight: 600;
+}
+.tcp-productmin__prices .--discount {
+	font-size: 18px;
+	font-weight: 600;
+}
+.tcp-productmin a[class*='-btn'] {
+	display: block;
+	width: 100%;
 }
 
 /* 
