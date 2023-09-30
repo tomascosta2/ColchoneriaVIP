@@ -153,7 +153,7 @@
     transform: translate(-50%,-50%);
 }
 
-.cv-homereviews .container .row .col-lg-4 .tcp-card span p::before{
+.cv-homereviews .container .row .col-lg-4 .tcp-card p::before{
     content: '';
 	position: absolute;
 	bottom: 65px;
@@ -173,11 +173,8 @@
     margin: 1rem 0;
 }
 
-.cv-homereviews .container .row .col-lg-4 .tcp-card span{
+.cv-homereviews .container .row .col-lg-4 .tcp-card p{
     font-size: 12px;
-}
-
-.cv-homereviews .container .row .col-lg-4 .tcp-card span p{
     margin-bottom: 120px;
 }
 
