@@ -20,6 +20,7 @@
 	--text: #6D6E70;
 }
 
+/*BANNER*/
 .cv-homebanner .row h1{
     font-weight: 800;
     color: var(--primary);
@@ -59,6 +60,8 @@
     margin: 1rem 0;
 }
 
+/*BENEFICIOS*/
+
 .cv-homebeneficts .row .col-lg-4 .tcp-card{
     display: grid; 
     grid-auto-flow: column; 
@@ -90,7 +93,9 @@
     line-height: normal;
 }
 
-.cv-homefeatured .cv-featuredproducts .cv-title{
+
+/*PRODUCTOS DESTACADOS*/
+.cv-homefeatured .cv-featuredproducts {
     margin-top: 8rem;
 }
 
@@ -113,24 +118,70 @@
     background-color: var(--primary);
 }
 
+.tcp-productmin__regularprice {
+    color: #aeaeae;
+    font-size: 12px;
+    font-weight: 600;
+    line-height: normal;
+    text-decoration: line-through;
+}
+
+.tcp-productmin__discountprice {
+    font-size: 15px;
+    font-weight: 600;
+    line-height: normal;
+    margin-left: 6px;
+}
+
+.tcp-productmin__body .d-flex {
+    align-items: center;
+}
+
+
+/*CLIENTES*/
+
 .cv-homereviews{
-    margin: 0 -120px;
     width: 100vw;
 }
 
-.cv-homereviews .container .row .col-lg-4 .tcp-card img{
-    width: 80px;
+.cv-homereviews .container .row .col-lg-4 .tcp-card img:last-child{
+    width: 120px;
     height: auto;
+    position: absolute;
+    bottom: 25px;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.cv-homereviews .container .row .col-lg-4 .tcp-card span p::before{
+    content: '';
+	position: absolute;
+	bottom: 65px;
+	left: calc(50% - 90px);
+	background-color: #E6E6E6;
+	width: 180px;
+	height: 1px;
 }
 
 .cv-homereviews .container .row .col-lg-4 .tcp-card{
     text-align: center;
+    position: relative;
 }
 
 .cv-homereviews .container .row .col-lg-4 .tcp-card h5{
     font-weight: 800;
     margin: 1rem 0;
 }
+
+.cv-homereviews .container .row .col-lg-4 .tcp-card span{
+    font-size: 12px;
+}
+
+.cv-homereviews .container .row .col-lg-4 .tcp-card span p{
+    margin-bottom: 120px;
+}
+
+/*INFORMACION TIENDA*/
 
 .cv-storedata h2 {
     margin-top: 8rem;
