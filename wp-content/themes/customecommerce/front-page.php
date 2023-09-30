@@ -68,7 +68,7 @@ $bannerLink = get_field('boton_banner', $post_id);
 		<div class="row">
 			<div class="col-lg-4">
 				<div class="tcp-card h-100">
-					<img src="<?php echo get_field('foto_opinion_1', $post_id) ?>" alt="Cliente Colchoneria VIP">
+					<img src="<?php echo get_field('foto_opinion_1', $post_id)['url'] ?>" alt="Cliente Colchoneria VIP">
 					<h5><?php echo get_field('nombre_opinion_1', $post_id); ?></h5>
 					<span><?php echo get_field('texto_opinion_1', $post_id); ?></span>
 					<img src="/wp-content/themes/customecommerce/assets/images/<?php echo get_field('estrellas_opinion_1', $post_id) ?>-stars" alt="Review Colchoneria VIP">
@@ -76,7 +76,7 @@ $bannerLink = get_field('boton_banner', $post_id);
 			</div>
 			<div class="col-lg-4">
 				<div class="tcp-card h-100">
-					<img src="<?php echo get_field('foto_opinion_2', $post_id) ?>" alt="Cliente Colchoneria VIP">
+					<img src="<?php echo get_field('foto_opinion_2', $post_id)['url'] ?>" alt="Cliente Colchoneria VIP">
 					<h5><?php echo get_field('nombre_opinion_2', $post_id); ?></h5>
 					<span><?php echo get_field('texto_opinion_2', $post_id); ?></span>
 					<img src="/wp-content/themes/customecommerce/assets/images/<?php echo get_field('estrellas_opinion_2', $post_id) ?>-stars" alt="Review Colchoneria VIP">
@@ -84,7 +84,7 @@ $bannerLink = get_field('boton_banner', $post_id);
 			</div>
 			<div class="col-lg-4">
 				<div class="tcp-card h-100">
-					<img src="<?php echo get_field('foto_opinion_3', $post_id) ?>" alt="Cliente Colchoneria VIP">
+					<img src="<?php echo get_field('foto_opinion_3', $post_id)['url'] ?>" alt="Cliente Colchoneria VIP">
 					<h5><?php echo get_field('nombre_opinion_3', $post_id); ?></h5>
 					<span><?php echo get_field('texto_opinion_3', $post_id); ?></span>
 					<img src="/wp-content/themes/customecommerce/assets/images/<?php echo get_field('estrellas_opinion_3', $post_id) ?>-stars" alt="Review Colchoneria VIP">

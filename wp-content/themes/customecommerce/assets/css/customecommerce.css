@@ -413,6 +413,13 @@ body.woocommerce-checkout {
 	width: 100%;
 }
 
+/*
+*	Product View
+*/
+.woocommerce-product-gallery__trigger {
+	display: none;
+}
+
 /* 
 * Responsive 
 */
