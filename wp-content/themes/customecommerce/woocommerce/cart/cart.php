@@ -63,8 +63,18 @@ $total_products = count($cart_items);
 							echo '<div>';
 							echo 	'<div class="me-4">';
 							echo 	'<h3 class="tcp-cart__itemtitle">' . $_product->get_name() . '</h3>';
-							echo 	'<span class="tcp-cart__itemdata">Cantidad</span>';
 									do_action( 'woocommerce_after_cart_item_name', $cart_item, $cart_item_key );
+									
+							echo '</div>';
+
+							// Precios individuales
+							echo '<div class="d-flex align-items-center gap-2">';
+							echo 	'<span class="tcp-cart__itemprice --regular">';
+							echo 		wc_price($_product->get_regular_price());
+							echo 	'</span>';
+							echo 	'<span class="tcp-cart__itemprice --sale">';
+							echo 		wc_price($_product->get_sale_price());
+							echo 	'</span>';
 							echo '</div>';
 
 							// Meta data.
@@ -79,7 +89,7 @@ $total_products = count($cart_items);
 						?>
 						<?php
 						// Cantidad
-						echo '<div class="text-center">';
+						echo '<div class="text-center d-flex align-items-center gap-2">';
 						if ( $_product->is_sold_individually() ) {
 							$min_quantity = 1;
 							$max_quantity = 1;
@@ -111,7 +121,7 @@ $total_products = count($cart_items);
 						echo apply_filters(
 							'woocommerce_cart_item_remove_link',
 							sprintf(
-								'<a href="%s" class="tcp-btn-remove" aria-label="%s" data-product_id="%s" data-product_sku="%s">Remove item</a>',
+								'<a href="%s" class="tcp-cart__remove" aria-label="%s" data-product_id="%s" data-product_sku="%s">x</a>',
 								esc_url( wc_get_cart_remove_url( $cart_item_key ) ),
 								/* translators: %s is the product name */
 								esc_attr( sprintf( __( 'Remove %s from cart', 'woocommerce' ), wp_strip_all_tags( $product_name ) ) ),

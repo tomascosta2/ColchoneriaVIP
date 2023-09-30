@@ -87,12 +87,12 @@ defined( 'ABSPATH' ) || exit;
 
 		</table>
 
-		<div class="d-flex justify-content-between gap-3">
-			<div class="tcp-cartcollaterals__addcoupon" id="addCoupon">Sumar cupón</div>
-			<div class="tcp-cartcollaterals__coupon d-flex d-none" id="couponsForm">
+		<div class="tcp-cart__coupon gap-3">
+			<div class="tcp-cart__addcoupon" id="addCoupon">Sumar cupón</div>
+			<div class="d-flex gap-1 d-none" id="couponsForm">
 				<label for="coupon_code" class="screen-reader-text"><?php esc_html_e( 'Coupon:', 'woocommerce' ); ?></label> 
 				<input type="text" name="coupon_code" class="input-text" id="coupon_code_totals" value="" placeholder="<?php esc_attr_e( 'Coupon code', 'woocommerce' ); ?>" /> 
-				<button type="submit" id="coupon_submit" class="tcp-btn --primary --sm" name="apply_coupon" value="<?php esc_attr_e( 'Apply coupon', 'woocommerce' ); ?>">Aplicar</button>
+				<button type="submit" id="coupon_submit" class="cv-btn --primary --sm" name="apply_coupon" value="<?php esc_attr_e( 'Apply coupon', 'woocommerce' ); ?>">Aplicar</button>
 				<?php do_action( 'woocommerce_cart_coupon' ); ?>
 			</div>
 		</div>
