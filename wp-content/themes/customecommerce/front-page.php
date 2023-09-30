@@ -57,7 +57,7 @@ $bannerLink = get_field('boton_banner', $post_id);
 		<div class="cv-featuredproducts">
 			<h2 class="cv-title mb-5"><?php echo get_field('titulo_1', $post_id); ?></h2>
 			<?php get_template_part('template-parts/custom/featured-products'); ?>
-			<a class="cv-btn --lg mx-auto mt-5" href="/categoria-producto/colchones">Ver más</a>
+			<a class="cv-btn --primary --lg mx-auto mt-5" href="/categoria-producto/colchones">Ver más</a>
 		</div>
 	</section>
 </div>
@@ -70,7 +70,7 @@ $bannerLink = get_field('boton_banner', $post_id);
 				<div class="tcp-card h-100">
 					<img src="<?php echo get_field('foto_opinion_1', $post_id)['url'] ?>" alt="Cliente Colchoneria VIP">
 					<h5><?php echo get_field('nombre_opinion_1', $post_id); ?></h5>
-					<span><?php echo get_field('texto_opinion_1', $post_id); ?></span>
+					<?php echo get_field('texto_opinion_1', $post_id); ?>
 					<img src="/wp-content/themes/customecommerce/assets/images/<?php echo get_field('estrellas_opinion_1', $post_id) ?>-stars" alt="Review Colchoneria VIP">
 				</div>
 			</div>
@@ -78,7 +78,7 @@ $bannerLink = get_field('boton_banner', $post_id);
 				<div class="tcp-card h-100">
 					<img src="<?php echo get_field('foto_opinion_2', $post_id)['url'] ?>" alt="Cliente Colchoneria VIP">
 					<h5><?php echo get_field('nombre_opinion_2', $post_id); ?></h5>
-					<span><?php echo get_field('texto_opinion_2', $post_id); ?></span>
+					<?php echo get_field('texto_opinion_2', $post_id); ?>
 					<img src="/wp-content/themes/customecommerce/assets/images/<?php echo get_field('estrellas_opinion_2', $post_id) ?>-stars" alt="Review Colchoneria VIP">
 				</div>
 			</div>
@@ -86,7 +86,7 @@ $bannerLink = get_field('boton_banner', $post_id);
 				<div class="tcp-card h-100">
 					<img src="<?php echo get_field('foto_opinion_3', $post_id)['url'] ?>" alt="Cliente Colchoneria VIP">
 					<h5><?php echo get_field('nombre_opinion_3', $post_id); ?></h5>
-					<span><?php echo get_field('texto_opinion_3', $post_id); ?></span>
+					<?php echo get_field('texto_opinion_3', $post_id); ?>
 					<img src="/wp-content/themes/customecommerce/assets/images/<?php echo get_field('estrellas_opinion_3', $post_id) ?>-stars" alt="Review Colchoneria VIP">
 				</div>
 			</div>
@@ -97,7 +97,7 @@ $bannerLink = get_field('boton_banner', $post_id);
 	<section class="cv-featuredproducts">
 		<h2 class="cv-title mb-5"><?php echo get_field('titulo_3', $post_id); ?></h2>
 		<?php get_template_part('template-parts/custom/featured-products'); ?>
-		<a class="cv-btn --lg mx-auto mt-5" href="/categoria-producto/colchones">Ver más</a>
+		<a class="cv-btn --primary --lg mx-auto mt-5" href="/categoria-producto/colchones">Ver más</a>
 	</section>
 	<section class="cv-storedata">
 		<h2 class="cv-title"><?php echo get_field('titulo_4', $post_id); ?></h2>

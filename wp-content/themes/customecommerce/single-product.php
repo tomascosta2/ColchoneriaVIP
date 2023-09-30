@@ -18,8 +18,9 @@ get_header();
 			<div class="col-lg-6">
 				<div class="tcp-productview__main">
 					<h1><?php echo get_the_title(); ?></h1>
-					<div class="tcp-productview__quality">
-						<span>Prueba de calidad</span>
+					<span>Marca: </span><strong><?php echo $product->get_attribute('marca') ?></strong>
+					<div class="tcp-productview__stars">
+						***** (324)
 					</div>
 					<div class="tcp-product__prices">
 						<?php
