@@ -93,57 +93,7 @@
     line-height: normal;
 }
 
-
-/*PRODUCTOS DESTACADOS*/
-.cv-homefeatured .cv-featuredproducts {
-    margin-top: 6rem;
-}
-
-.tcp-productmin{
-    background-color: white;
-    padding: 1rem 1rem;
-}
-
-.tcp-productmin__body {
-    margin: 1rem 0 0.5rem 0;
-    width: -webkit-fill-available;
-}
-
-.tcp-productmin__body .cv-btn{
-    display: block;
-    margin-top: 1rem;
-    padding: 0.5rem 1.5rem;
-    text-align: center;
-    font-size: smaller;
-    background-color: var(--primary);
-}
-
-.tcp-productmin__regularprice {
-    color: #aeaeae;
-    font-size: 12px;
-    font-weight: 600;
-    line-height: normal;
-    text-decoration: line-through;
-}
-
-.tcp-productmin__discountprice {
-    font-size: 15px;
-    font-weight: 600;
-    line-height: normal;
-    margin-left: 6px;
-}
-
-.tcp-productmin__body .d-flex {
-    align-items: center;
-}
-
-
 /*CLIENTES*/
-
-.cv-homereviews{
-    width: 100vw;
-}
-
 .cv-homereviews .container .row .col-lg-4 .tcp-card img:last-child{
     width: 120px;
     height: auto;
@@ -152,7 +102,6 @@
     left: 50%;
     transform: translate(-50%,-50%);
 }
-
 .cv-homereviews .container .row .col-lg-4 .tcp-card p::before{
     content: '';
 	position: absolute;
