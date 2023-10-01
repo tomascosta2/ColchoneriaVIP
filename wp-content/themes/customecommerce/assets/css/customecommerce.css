@@ -79,16 +79,17 @@ p {
 .tcp-header__nav span {
 	color: #FFFFFF;
 }
+.nav-toggler-wrapper svg path,
 .tcp-header__nav svg path {
 	fill: #FFF;
-}
+} 
 .tcp-header__logo {
     font-size: 18px;
 	color: #FFF !important;
 	font-weight: 600;
 	width: max-content;
 }
-.tcp-header__toggle {
+.nav-toggler-wrapper {
 	display: none;
 }
 .tcp-header__nav.--primary,
@@ -484,41 +485,46 @@ body.woocommerce-checkout {
 	.tcp-header__nav {
 		width: fit-content;
 	}
-	.tcp-header__primarynav {
-		display: none;
+	.nav-toggler-wrapper {
+		width: 96px;
+		order: -1;
+		display: block;
 	}
 	.tcp-header__toggle {
 		width: 20px;
 		height: auto;
-		display: block;
-		order: -1;
 		cursor: pointer;
 	}
-	.tcp-header__primarynav.--active {
+	.tcp-header__nav.--primary {
+		display: none;
+	}
+	.tcp-header__nav.--primary.--active {
 		width: 100%;
+		max-width: 696px;
 		height: fit-content;
-		padding: 40px 10px;
+		padding: 20px 10px;
 		display: flex;
 		flex-direction: column;
 		align-items: center;
 		justify-content: center;
 		gap: 0;
 		position: fixed;
-		top: 74px;
-		left: 0;
+		top: 89px;
+		left: calc(50% - 348px);
 		background-color: #FFF;
 		box-shadow: 0px 4px 7px 0px rgba(173, 170, 169, 0.60);
 	}
-	.tcp-header__primarynav.--active li {
+	.tcp-header__nav.--primary.--active li {
 		border-bottom: 1px solid #DDD;
 		width: 100%;
 	}
-	.tcp-header__primarynav.--active li:last-child {
+	.tcp-header__nav.--primary.--active li:last-child {
 		border: none;
 	}
-	.tcp-header__primarynav.--active a {
+	.tcp-header__nav.--primary.--active a {
 		padding: 10px;
 		display: block;
+		color: #222;
 	}
 
 	/* Products Page Mobile */
@@ -539,14 +545,25 @@ body.woocommerce-checkout {
 @media (max-width: 768px) {
 	/* Header mobile */
 	.tcp-header__cartcount {
-		width: 30px;
-		height: 30px;
-		font-size: 12px;
+		font-size: 10px;
 	}
 	.tcp-header__logo img {
 		width: 100px;
 	}
 	.tcp-header__inner {
 		gap: unset;
+	}
+	.tcp-header__nav.--primary.--active {
+		left: 0;
+	}
+	.tcp-overheader {
+		font-size: 10px;
+	}
+	.tcp-header__nav .cv-btn {
+		display: none !important;
+	}
+	.nav-account svg {
+		width: 20px;
+		height: 20px;
 	}
 }
