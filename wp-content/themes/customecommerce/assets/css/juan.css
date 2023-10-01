@@ -96,7 +96,7 @@
 
 /*PRODUCTOS DESTACADOS*/
 .cv-homefeatured .cv-featuredproducts {
-    margin-top: 8rem;
+    margin-top: 6rem;
 }
 
 .tcp-productmin{
@@ -187,7 +187,6 @@
 
 .cv-storedata .row .col-lg-6 .tcp-card .d-flex img {
     border-radius: 50%;
-    border: 2px solid black;
     height: 75px;
     width: 75px;
 }
@@ -214,6 +213,8 @@
 
 .cv-storedata__sellers .tcp-card img{
     border-radius: 50%;
+    width: 102px;
+    height: 100px;
 }
 
 .cv-storedata__sellers .tcp-card h5{
