@@ -15,13 +15,13 @@ $header_class = $show_title ? 'site-title' : 'screen-reader-text';
 ?>
 
 <?php if ( has_custom_logo() && $show_title ) : ?>
-	<a href="/" class="tcp-header__logo">La Colchoneria Vip</a>
+	<a href="/" class="tcp-header__logo">Colchoneria Vip</a>
 <?php endif; ?>
 
 <div class="site-branding me-0 mt-0">
 
 	<?php if ( has_custom_logo() && ! $show_title ) : ?>
-		<a href="/" class="tcp-header__logo">La Colchoneria Vip</a>
+		<a href="/" class="tcp-header__logo">Colchoneria Vip</a>
 	<?php endif; ?>
 
 	<?php if ( $description && true === get_theme_mod( 'display_title_and_tagline', true ) ) : ?>

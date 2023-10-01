@@ -135,20 +135,26 @@ p {
 *	Footer 
 */
 .tcp-footer {
-	background-color: #6D6E70;
+	background-color: var(--secondary);
 	padding: 60px 0;
 }
 .tcp-footer__grid {
 	display: grid;
-	grid-template-columns: .5fr 1fr 1fr 1fr;
+	grid-template-columns: 1fr;
 }
 .tcp-footer__grid section {
 	display: flex;
 	justify-content: center;
 	align-items: center;
 }
-.tcp-footer__grid section:first-child {
-	justify-content: start;
+.tcp-footer__grid h3 {
+	color: #FFF;
+	font-weight: 600;
+	font-size: 32px;
+}
+.tcp-footer__grid p {
+	font-size: 24px;
+	color: #FFF;
 }
 
 .tcp-rightsfooter {
