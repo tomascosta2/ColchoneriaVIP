@@ -61,8 +61,18 @@
 }
 
 @media screen and (max-width:720px) {
+    .cv-homebanner {
+        margin: 0 0 0.5em 0;
+    }
     .cv-homebanner .row .col-lg-4{
-        margin-top: 2rem;
+        margin-bottom: 1em;
+        order: -1;
+    }
+    .cv-homebanner h1{
+        margin-top: 1em;
+    }
+    .cv-homebanner .row .col-lg-8 {
+        padding: 0 1em;
     }
 }
 /*BENEFICIOS*/
