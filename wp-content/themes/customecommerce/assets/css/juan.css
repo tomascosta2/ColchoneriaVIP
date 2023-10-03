@@ -107,7 +107,7 @@
 
 @media screen and (max-width:720px) {
     .cv-homebeneficts .row .col-lg-4{
-        margin-bottom: 1rem;
+        margin-bottom: 8px;
     }
 }
 
@@ -194,7 +194,7 @@
         padding-bottom: 20px;
     }
     .cv-homereviews .container .row .col-lg-4{
-        margin-bottom: 1rem;
+        margin-bottom: 8px;
     }
     .cv-storedata__sellers{
         grid-template-columns: repeat(1,1fr);
@@ -259,6 +259,6 @@
     }
 
     .cv-storedata .row .col-lg-6{
-        margin-bottom: 1rem;
+        margin-bottom: 8px;
     }
 }

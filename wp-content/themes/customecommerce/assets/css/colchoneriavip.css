@@ -85,3 +85,10 @@
 	margin-top: 20px;
 }
 
+@media (max-width: 992px) {
+	.cv-storedata__sellers,
+	.tcp-productsgrid {
+		margin-top: 0;
+		gap: 8px;
+	}
+}
