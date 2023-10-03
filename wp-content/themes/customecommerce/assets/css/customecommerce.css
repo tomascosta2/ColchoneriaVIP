@@ -408,7 +408,7 @@ body.woocommerce-checkout {
 	font-size: 14px;
 	color: var(--text);
 	line-height: 120%;
-	height: 53px;
+	height: 50px;
 	overflow: hidden;
 }	
 .tcp-product__prices {

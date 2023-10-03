@@ -47,7 +47,7 @@
     margin: 1rem 0 1rem 0;
 }
 
-.cv-homebanner .row .col-lg-8 a{
+.cv-homebanner .row .col-lg-8 .cv-btn{
     background-color: var(--primary);
     color: white;
     padding: 5px 35px;
