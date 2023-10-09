@@ -263,3 +263,22 @@
         margin-bottom: 8px;
     }
 }
+
+/*CARRITO*/
+
+@media screen and (max-width:720px) {
+    .woocommerce .tcp-cart__header h2{
+        margin: 12px;
+    }
+
+    .woocommerce .row.py-3 .col-md-8.pe-4{
+        padding-right: 12px !important;
+    }
+    
+    .woocommerce .row.py-3 .col-md-4.ps-0{
+        padding-left: 12px !important;
+    }
+    .woocommerce .row.py-3 .col-md-4.ps-0 .tcp-cart__collaterals {
+        margin-top: 10px;
+    }
+}
