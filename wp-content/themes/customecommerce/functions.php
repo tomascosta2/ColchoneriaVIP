@@ -360,6 +360,15 @@ function twenty_twenty_one_widgets_init() {
 			'after_title'   => '</h2>',
 		)
 	);
+
+	register_sidebar(
+		array(
+			'name'          => esc_html__( 'Menu Colchones', 'twentytwentyone' ),
+			'id'            => 'menu-colchones',
+			'before_widget' => '<section id="%1$s" class="widget %2$s">',
+			'after_widget'  => '</section>'
+		)
+	);
 }
 add_action( 'widgets_init', 'twenty_twenty_one_widgets_init' );
 
