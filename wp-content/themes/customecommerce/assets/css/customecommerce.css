@@ -445,6 +445,7 @@ body.woocommerce-checkout {
 	border-radius: 5px;
 	object-fit: contain;
 	background-color: #FFF;
+	max-width: unset;
 }
 .tcp-productview__main {
 	padding-top: 30px;
