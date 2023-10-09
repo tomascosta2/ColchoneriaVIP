@@ -363,10 +363,26 @@ function twenty_twenty_one_widgets_init() {
 
 	register_sidebar(
 		array(
-			'name'          => esc_html__( 'Menu Colchones', 'twentytwentyone' ),
-			'id'            => 'menu-colchones',
-			'before_widget' => '<section id="%1$s" class="widget %2$s">',
-			'after_widget'  => '</section>'
+			'name'          => esc_html__( 'Menu Colchones Columna 1', 'twentytwentyone' ),
+			'id'            => 'menu-colchones-1',
+			'before_widget' => '<div id="%1$s" class="widget %2$s">',
+			'after_widget'  => '</div>'
+		)
+	);
+	register_sidebar(
+		array(
+			'name'          => esc_html__( 'Menu Colchones Columna 2', 'twentytwentyone' ),
+			'id'            => 'menu-colchones-2',
+			'before_widget' => '<div id="%1$s" class="widget %2$s">',
+			'after_widget'  => '</div>'
+		)
+	);
+	register_sidebar(
+		array(
+			'name'          => esc_html__( 'Menu Colchones Columna 1', 'twentytwentyone' ),
+			'id'            => 'menu-colchones-3',
+			'before_widget' => '<div id="%1$s" class="widget %2$s">',
+			'after_widget'  => '</div>'
 		)
 	);
 }
