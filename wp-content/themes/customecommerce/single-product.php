@@ -33,7 +33,7 @@ get_header();
 						?>
 					</div>
 					<?php echo get_the_content(); ?>
-					<div class="d-flex gap-2 mt-3">
+					<div class="d-flex flex-column flex-md-row gap-2 mt-3">
 						<a class="cv-btn --unfilled" href="https://wa.me/+5492614713096">Hablar con ventas</a>
 						<?php echo woocommerce_template_loop_add_to_cart(); ?>
 					</div>

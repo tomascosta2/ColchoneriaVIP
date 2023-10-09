@@ -529,7 +529,7 @@ body.woocommerce-checkout {
 
 	/* Products Page Mobile */
 	.tcp-productsgrid {
-		grid-template-columns: 1fr
+		grid-template-columns: 1fr !important;
 	}
 	
 	/* Footer Mobile */

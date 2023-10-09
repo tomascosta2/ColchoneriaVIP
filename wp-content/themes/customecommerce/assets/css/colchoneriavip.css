@@ -29,6 +29,7 @@
 }
 .cv-btn.--primary {
 	background-color: var(--primary) !important;
+	border: 2px solid var(--primary) !important;
 }
 .cv-btn.--primary:hover {
 	background-color: var(--secondary) !important;

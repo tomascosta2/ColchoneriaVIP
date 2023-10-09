@@ -27,12 +27,13 @@
     max-width: 95%;
 }
 
-.cv-homebanner .row p{
+.cv-homebanner .row p {
     line-height: normal;
     font-weight: 400;
     font-size: 16px;
     max-width: 95%;
-    color: #000000;
+    color: #414141;
+    max-width: 500px;
 }
 
 .cv-homebanner .row .col-lg-8 {
