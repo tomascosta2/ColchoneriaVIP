@@ -40,7 +40,8 @@ get_header();
 				</div>
 			</div>
 		</div>
-		<div class="tcp-productview__info">
+		<div class="tcp-productview__attributes my-5">
+			<?php wc_display_product_attributes($product); ?>
 		</div>
 		<div class="tcp-relatedproducts">
 			<?php 
