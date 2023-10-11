@@ -282,3 +282,35 @@
         margin-top: 10px;
     }
 }
+
+/*MERCADO PAGO CHECKOUT*/
+
+.mp-checkout-benefits-list{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
+    justify-items: center;
+    text-align: center;
+    margin-top: 4em;
+}
+
+.mp-checkout-benefits-image {
+    margin-bottom: 1em;
+}
+
+.mp-payment-methods-v2-list{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    justify-items: center;
+    align-items: center;
+    margin-top: 2em;
+}
+
+.mp-payment-methods-v2-title{
+    text-align: center;
+    margin-top: 3em;
+}
+
+.mp-payment-methods-v2-list img{
+    width: 100px;
+}
