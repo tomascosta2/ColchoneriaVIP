@@ -295,7 +295,13 @@
 }
 
 .mp-checkout-benefits-image {
-    margin-bottom: 1em;
+    margin-bottom: 1.5em !important;
+    width: 110px;
+}
+
+.mp-checkout-benefits-title, .mp-payment-methods-v2-title{
+    font-weight: 700;
+    font-size: 20px;
 }
 
 .mp-payment-methods-v2-list{
@@ -313,4 +319,20 @@
 
 .mp-payment-methods-v2-list img{
     width: 100px;
+}
+
+.mp-checkout-redirect-v2-text, .mp-terms-and-conditions-text{
+    margin-left: 0.5em;
+}
+
+.mp-checkout-redirect-v2-image{
+    margin-top: 2em;
+}
+
+.payment_method_woo-mercado-pago-basic input,.wc_payment_method.payment_method_bacs input,.wc_payment_method.payment_method_cod input,.payment_method_woo-mercado-pago-basic input::after, input[type=radio]:checked{
+    border-color: #009042;
+}
+
+input[type=radio]:after{
+    background-color: #009042;
 }
